@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         override fun doInBackground(vararg p0: Void?): Void? {
             var document: Document? = null
             try {
-                text = "https://www.google.com/search?q=domi" + text
+                text = "https://www.google.com/search?q=" + text
                 //var text = question.toString() + "https://www.google.com/search?q=domi"
                 document = Jsoup.connect(text).get()
             } catch (e: IOException) {
